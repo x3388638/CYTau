@@ -1,0 +1,13 @@
+.PostForm {
+	border: 1px solid #eaeaea;
+	border-radius: 10px;
+	padding-bottom: 13px
+}
+
+.PostForm__title {
+	font-size: 20px;
+	font-weight: bold;
+	top: -14px;
+	background: #fff;
+	position: relative;
+}

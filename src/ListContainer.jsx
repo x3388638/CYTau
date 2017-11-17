@@ -4,11 +4,28 @@ import {
 } from 'reactstrap';
 
 import './ListContainer.css';
+import PostForm from './PostForm.jsx';
 
 export default class ListContainer extends React.Component {
-	render () {
+	constructor(props) {
+		super(props);
+		this.state = {
+			list: []
+		};
+
+		this.getList = this.getList.bind(this);
+		this.getList();
+	}
+
+	getList() {
+		//
+	}
+
+	render() {
 		return (
-			<Container className="ListContainer">list container</Container>
+			<Container className="ListContainer">
+				<PostForm />
+			</Container>
 		)
 	}
 }
