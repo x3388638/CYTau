@@ -34,7 +34,7 @@ export default class MainContainer extends React.Component {
 			<Container className="MainContainer">
 				<PostForm onPost={this.getList} />
 				<hr />
-				<ListContainer list={this.state.list} />
+				<ListContainer list={this.state.list} onDel={this.getList} />
 			</Container>
 		)
 	}

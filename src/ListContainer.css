@@ -1,0 +1,18 @@
+.Item__desc {
+	white-space: pre-line;
+}
+
+.Item__btn-del {
+	position: absolute;
+	color: red;
+	z-index: 1;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	right: 25px;
+	display: none;
+}
+
+.Item:hover .Item__btn-del {
+	display: initial;
+}
