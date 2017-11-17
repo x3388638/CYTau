@@ -137,8 +137,12 @@ export default class PostForm extends React.Component {
 			'你的疑問請一次整合並歸納完整 我在一次回覆你 沒頭沒尾的很難去回應 你的疑問是?',
 			'那是我的疑問而已?和能不能穿沒有關聯好嗎?'
 		];
-
 		const quot = quotationList[Math.floor(Math.random() * quotationList.length)];
+		let name = '';
+		if (localStorage.CYTau && JSON.parse(localStorage.CYTau) && JSON.parse(localStorage.CYTau).name) {
+			name = JSON.parse(localStorage.CYTau).name;
+		}
+
 		return (
 			<Row className="pt-4">
 				<Col className="PostForm" xs={12}>
@@ -150,7 +154,7 @@ export default class PostForm extends React.Component {
 							<FormGroup row>
 								<Label for="PostForm__input-name" sm={2}>暱稱</Label>
 								<Col sm={10}>
-									<Input type="text" id="PostForm__input-name" placeholder="" innerRef={node => this.name = node} />
+									<Input type="text" id="PostForm__input-name" placeholder="" defaultValue={name} innerRef={node => this.name = node} />
 								</Col>
 							</FormGroup>
 							<FormGroup row>

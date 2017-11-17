@@ -19,7 +19,9 @@ class Item extends React.Component {
 			<Col className="mb-2 Item" xs={12} data-id={this.props.k}>
 				<span className="Item__btn-del" onClick={this.props.handleDel}>&times;</span>
 				<Card>
-					<CardImg top width="100%" src={this.props.url} alt="" />
+					<a href={this.props.url} target="_blank">
+						<CardImg top width="100%" src={this.props.url} alt="" />
+					</a>
 					<CardBody>
 						<CardTitle>{this.props.name}</CardTitle>
 						<Badge color="info" pill>{this.props.dept}</Badge><br />
