@@ -12,9 +12,10 @@ const config = {
 	authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
 	databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
 	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-	storageBucket: '',
+	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
 	messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID
 };
+console.log(config);
 window.firebase.initializeApp(config);
 
 ReactDOM.render(<App />, document.getElementById('app'));

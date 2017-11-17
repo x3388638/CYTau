@@ -14,6 +14,7 @@ export default class ListContainer extends React.Component {
 		};
 
 		this.getList = this.getList.bind(this);
+		this.handlePost = this.handlePost.bind(this);
 		this.getList();
 	}
 
@@ -21,10 +22,14 @@ export default class ListContainer extends React.Component {
 		//
 	}
 
+	handlePost() {
+		console.log('ssssss');
+	}
+	
 	render() {
 		return (
 			<Container className="ListContainer">
-				<PostForm />
+				<PostForm onPost={this.handlePost} />
 			</Container>
 		)
 	}
