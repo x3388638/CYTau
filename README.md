@@ -30,6 +30,6 @@ Live Demo: [https://x3388638.github.io/CYTau/](https://x3388638.github.io/CYTau/
 ![](https://i.imgur.com/LhR6EcF.png)
 
 ## 技術使用
-client: [create-react-app](https://github.com/facebookincubator/create-react-app) for view、[imgur](https://apidocs.imgur.com/) for image upload、[reactstrap](https://github.com/reactstrap/reactstrap) for layout  
+client: [create-react-app](https://github.com/facebookincubator/create-react-app) for view、[imgur](https://apidocs.imgur.com/) for image upload、[reactstrap](https://github.com/reactstrap/reactstrap) & [bricklayer](https://github.com/ademilter/bricklayer) for layout  
 server: none  
 database: [firebase](https://firebase.google.com/)
