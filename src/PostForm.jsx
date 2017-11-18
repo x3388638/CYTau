@@ -207,7 +207,12 @@ export default class PostForm extends React.Component {
 							</FormGroup>
 							<FormGroup row>
 								<Col sm={12}>
-									<Button disabled={this.state.waiting ? true : false} className="PostForm__btn-submit" block color="primary" onClick={this.handleSubmit}>送出</Button>
+									<Button
+										disabled={this.state.waiting ? true : false}
+										className="PostForm__btn-submit" block color="primary"
+										onClick={this.handleSubmit}>
+											{ this.state.waiting ? '上傳中，請稍候...' : '送出'}
+									</Button>
 								</Col>
 							</FormGroup>
 						</Form>
